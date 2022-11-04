@@ -24,7 +24,7 @@ body{
     flex-direction: column;
     max-width: 1250px;
     margin: auto;
-    padding: 120px 30px;
+    padding: 75px 30px;
 }
 
 .bloco-1 .container img{
@@ -51,6 +51,7 @@ body{
     animation: test 26s infinite;
     animation-timing-function: ease;
     width: 100%;
+    z-index: 1;
 }
 
 @keyframes test {
@@ -68,8 +69,18 @@ body{
 }
 
 @keyframes teste {
-    0%    { transform: rotate(0deg) translateY(100px) rotate(0deg) scale(1) }
-    50%   { transform: rotate(180deg) translateY(100px) rotate(180deg) scale(1.3) }
+      0%  { transform: rotate(0deg) translateY(100px) rotate(0deg) scale(1) }
+     50%  { transform: rotate(180deg) translateY(100px) rotate(180deg) scale(1.3) }
     100%  { transform: rotate(360deg) translateY(100px) rotate(360deg) scale(1) }
 }
 
+.bloco-1 .container #seta{
+    width: 150px;
+    animation: seta 3s infinite;
+}
+
+@keyframes seta {
+     0%  { transform: translate(-200px, -200px) }
+    50%  { transform: translate(-225px, -50px) }
+   100%  { transform: translate(-200px, -200px) }
+}
