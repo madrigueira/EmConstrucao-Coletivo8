@@ -7,6 +7,7 @@
 
 body{
     background-color: #0A1325;
+    overflow-x: hidden;
 }
 
 /* BLOCO 1 */
@@ -14,6 +15,8 @@ body{
     background-image: url('imgs/bg-1.png');
     background-size: 100%;
     background-position: bottom;
+    background-repeat: no-repeat;
+    padding-bottom: 15%;
 }
 
 .bloco-1 .container{
@@ -44,15 +47,29 @@ body{
     letter-spacing: 2px;
 }
 
-.bloco-1 .container #astro{
+.bloco-1 .container .astro{
+    animation: test 26s infinite;
+    animation-timing-function: ease;
+    width: 100%;
+}
+
+@keyframes test {
+    0%    { transform: translateX(0px) }
+    50%   { transform: translateX(50%) }
+    100%  { transform: translateX(0px) }
+}
+
+.bloco-1 .container .astro #astro{
     margin-left: 0;
     width: 200px;
-    animation: teste 5s infinite;
-    animation-timing-function: ease;
+    animation: teste 18s infinite;
+    animation-timing-function: linear;
+    margin-top: 50px;
 }
 
 @keyframes teste {
-    0%{transform: translate(0, 0) rotate(0deg);}
-    50%{transform: translate(350px, -40px) rotate(180deg);} 
-    100%{transform: translate(0, 0) rotate(360deg);}
+    0%    { transform: rotate(0deg) translateY(100px) rotate(0deg) scale(1) }
+    50%   { transform: rotate(180deg) translateY(100px) rotate(180deg) scale(1.3) }
+    100%  { transform: rotate(360deg) translateY(100px) rotate(360deg) scale(1) }
 }
+
