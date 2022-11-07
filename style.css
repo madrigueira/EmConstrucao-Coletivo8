@@ -48,13 +48,13 @@ body{
 }
 
 .bloco-1 .container .astro{
-    animation: test 26s infinite;
+    animation: astro-1 26s infinite;
     animation-timing-function: ease;
     width: 100%;
     z-index: 1;
 }
 
-@keyframes test {
+@keyframes astro-1 {
     0%    { transform: translateX(0px) }
     50%   { transform: translateX(50%) }
     100%  { transform: translateX(0px) }
@@ -63,12 +63,12 @@ body{
 .bloco-1 .container .astro #astro{
     margin-left: 0;
     width: 200px;
-    animation: teste 18s infinite;
+    animation: astro-2 18s infinite;
     animation-timing-function: linear;
     margin-top: 50px;
 }
 
-@keyframes teste {
+@keyframes astro-2 {
       0%  { transform: rotate(0deg) translateY(100px) rotate(0deg) scale(1) }
      50%  { transform: rotate(180deg) translateY(100px) rotate(180deg) scale(1.3) }
     100%  { transform: rotate(360deg) translateY(100px) rotate(360deg) scale(1) }
