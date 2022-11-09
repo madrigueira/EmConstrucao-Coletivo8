@@ -47,7 +47,7 @@ body{
     letter-spacing: 2px;
 }
 
-.bloco-1 .container h2 .typed-cursor{
+.bloco-1 .container h2 .typed-cursor, .bloco-2 .container h1 .typed-cursor{
     animation-duration: 1.2s;
 }
 
