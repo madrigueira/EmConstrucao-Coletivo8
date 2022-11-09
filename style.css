@@ -47,6 +47,10 @@ body{
     letter-spacing: 2px;
 }
 
+.bloco-1 .container h2 .typed-cursor{
+    animation-duration: 1.2s;
+}
+
 .bloco-1 .container .astro{
     animation: astro-1 26s infinite;
     animation-timing-function: ease;
@@ -83,4 +87,21 @@ body{
      0%  { transform: translate(-200px, -200px) }
     50%  { transform: translate(-225px, -50px) }
    100%  { transform: translate(-200px, -200px) }
+}
+
+/* BLOCO 2 */
+.bloco-2 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: auto;
+    margin-top: auto;
+    padding: 0px 30px;
+}
+
+.bloco-2 .container h1{
+    color: #FF0646;
+    margin: auto 0;
+    font-size: 4em;
 }
