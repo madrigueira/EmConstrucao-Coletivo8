@@ -5,6 +5,7 @@ var typed = new Typed('#typed',{
     typeSpeed: 120,
     showCursor: true,
     cursorChar: '|',
+    startDelay: 100,
 })
 
 var typed = new Typed('#typed-2',{
@@ -13,4 +14,12 @@ var typed = new Typed('#typed-2',{
     typeSpeed: 120,
     showCursor: true,
     cursorChar: '|',
+})
+
+var typed = new Typed('#typed-3',{
+    stringsElement: '#typed-strings-3',
+    smartBackspace: true,
+    typeSpeed: 120,
+    showCursor: true,
+    cursorChar: '!',
 })

@@ -105,3 +105,51 @@ body{
     margin: auto 0;
     font-size: 4em;
 }
+
+/* BLOCO 3 */
+.bloco-3 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: 25% auto;
+    padding: 0px 30px;
+}
+
+.bloco-3 .container h1{
+    color: #fff;
+    font-size: 4em;
+}
+
+.bloco-3 .container h1 span{
+    font-size: 3em;
+}
+
+.bloco-3 .container .typed-cursor{
+    animation-duration: 1.5s !important;
+}
+
+/* BLOCO 4 */
+.bloco-4{
+    overflow: hidden;
+}
+
+.bloco-4 .container .faixa{
+    background-image: url(imgs/bg-2.png);
+    background-size: contain;
+}
+
+.bloco-4 .container .faixa h1{
+    animation: faixa 4s infinite;
+    animation-timing-function: linear;
+    font-size: 14em;
+    font-weight: 900;
+    font-style: italic;
+    width: max-content;
+    color: #0A1325;
+}
+
+@keyframes faixa {
+      0%    {transform: translateX(-0%);}
+    100%    {transform: translateX(-33.8%);}
+}
