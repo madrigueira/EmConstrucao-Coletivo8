@@ -34,3 +34,11 @@ var typed = new Typed('#typed-4',{
     loopCount: Infinity,
     backDelay: 1250,
 })
+
+$(window).scroll(function () {
+    var $this = $(this),
+        $head = $('#body');
+    if ($this.scrollTop() > 5800) {
+       $head.addClass('active');
+    }
+});

@@ -8,7 +8,10 @@
 body{
     background-color: #0A1325;
     overflow-x: hidden;
-    filter: blur(8px);
+}
+
+#body.active{
+    filter: blur(3px);
 }
 
 /* BLOCO 1 */
@@ -218,4 +221,20 @@ body{
 
 .bloco-6 .container #a-3:hover{
     color: #FF0646;
+}
+
+/* BLOCO 7 */
+.bloco-7 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: auto;
+    margin-top: 20%;
+    padding: 0px 30px;
+}
+
+.bloco-7 .container h1{
+    color: #fff;
+    font-size: 3em;
 }
