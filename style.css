@@ -8,6 +8,7 @@
 body{
     background-color: #0A1325;
     overflow-x: hidden;
+    filter: blur(8px);
 }
 
 /* BLOCO 1 */
@@ -137,6 +138,13 @@ body{
 .bloco-4 .container .faixa{
     background-image: url(imgs/bg-2.png);
     background-size: contain;
+    animation: bg-faixa 25s infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes bg-faixa {
+    from {background-position: 0 0;}
+    to   {background-position: 100% 0;}
 }
 
 .bloco-4 .container .faixa h1{
@@ -152,4 +160,62 @@ body{
 @keyframes faixa {
       0%    {transform: translateX(-0%);}
     100%    {transform: translateX(-33.8%);}
+}
+
+/* BLOCO 5 */
+.bloco-5 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: 15% auto;
+    padding: 0px 30px;
+}
+
+.bloco-5 .container h1{
+    color: #FF0646;
+    margin: auto 0;
+    font-size: 3em;
+}
+
+/* BLOCO 6 */
+.bloco-6 .container{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+.bloco-6 .container p{
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #FF0646;
+}
+
+.bloco-6 .container a{
+    font-size: 6em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #484D56;
+    line-height: 100%;
+    width: fit-content;
+    transition: 0.2s;
+}
+
+.bloco-6 .container a:hover{
+    transform: translateX(50px);
+}
+
+.bloco-6 .container #a-1:hover{
+    color: #EBB02A;
+}
+
+.bloco-6 .container #a-2:hover{
+    color: #E27E2C;
+}
+
+.bloco-6 .container #a-3:hover{
+    color: #FF0646;
 }

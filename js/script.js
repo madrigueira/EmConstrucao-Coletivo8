@@ -23,3 +23,14 @@ var typed = new Typed('#typed-3',{
     showCursor: true,
     cursorChar: '!',
 })
+
+var typed = new Typed('#typed-4',{
+    stringsElement: '#typed-strings-4',
+    smartBackspace: true,
+    typeSpeed: 250,
+    showCursor: true,
+    cursorChar: '|',
+    loop: true,
+    loopCount: Infinity,
+    backDelay: 1250,
+})
