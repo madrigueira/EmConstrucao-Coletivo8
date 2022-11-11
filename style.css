@@ -11,7 +11,7 @@ body{
 }
 
 #body.active{
-    filter: blur(3px);
+    filter: blur(5px);
 }
 
 /* BLOCO 1 */
@@ -235,6 +235,44 @@ body{
 }
 
 .bloco-7 .container h1{
-    color: #fff;
+    color: #484D56;
+    font-size: 3em;
+}
+
+/* BLOCO 8 */
+.bloco-8{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: auto;
+    margin-top: 0%;
+    padding: 0px 30px;
+}
+
+.bloco-8 h2{
+    color: #484D56;
+    font-size: 12em;
+    line-height: 80%;
+}
+
+.bloco-8 h1{
+    color: #484D56;
+    font-size: 3em;
+}
+
+/* BLOCO 9 */
+.bloco-9{
+    display: flex;
+    flex-direction: column;
+    max-width: 1250px;
+    height: 75vh;
+    margin: auto;
+    margin-top: 15%;
+    padding: 0px 30px;
+}
+
+.bloco-9 h1{
+    color: #484D56;
     font-size: 3em;
 }
