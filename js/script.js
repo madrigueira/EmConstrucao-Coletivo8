@@ -47,7 +47,7 @@ if (window.matchMedia("(max-width:800px)").matches) {
     $(window).scroll(function () {
         var $this = $(this),
             $head = $('#body');
-        if ($this.scrollTop() > 3600) {
+        if ($this.scrollTop() > 3000) {
            $head.addClass('active');
         }
     });
