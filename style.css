@@ -31,8 +31,9 @@ body{
     padding: 75px 30px;
 }
 
-.bloco-1 .container img{
+.bloco-1 .container #logo{
     width: 20%;
+    min-width: 175px;
     margin-left: auto;
 }
 
@@ -60,6 +61,7 @@ body{
     animation-timing-function: ease;
     width: 100%;
     z-index: 1;
+    margin-left: auto;
 }
 
 @keyframes astro-1 {
@@ -85,12 +87,51 @@ body{
 .bloco-1 .container #seta{
     width: 150px;
     animation: seta 3s infinite;
+    margin-left: auto;
 }
 
 @keyframes seta {
      0%  { transform: translate(-200px, -200px) }
     50%  { transform: translate(-225px, -50px) }
    100%  { transform: translate(-200px, -200px) }
+}
+
+/* BLOCO 1: medias */
+@media only screen and (max-width: 870px){
+    .bloco-1 .container #logo{
+        margin-left: 0;
+        margin-right: auto;
+        padding-bottom: 30px;
+    }
+
+    .bloco-1 .container h1{
+        font-size: 3em;
+        font-weight: 600;
+        line-height: 90%;
+    }
+
+    .bloco-1 .container h2{
+        font-size: 2.3em;
+        font-weight: 400;
+        padding: 15px 0;
+        letter-spacing: 2px;
+    }
+
+    .bloco-1 .container .astro #astro{
+        width: 100px;
+        margin-top: 10px;
+    }
+
+    .bloco-1 .container #seta{
+        width: 100px;
+        animation: seta-mob 3s infinite;
+    }
+    
+    @keyframes seta-mob {
+         0%  { transform: translate(0px, -150px) }
+        50%  { transform: translate(-25px, -50px) }
+       100%  { transform: translate(0px, -150px) }
+    }
 }
 
 /* BLOCO 2 */
