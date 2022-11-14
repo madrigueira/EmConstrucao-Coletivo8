@@ -21,6 +21,7 @@ body{
     background-position: bottom;
     background-repeat: no-repeat;
     padding-bottom: 15%;
+    overflow: hidden;
 }
 
 .bloco-1 .container{
@@ -62,6 +63,7 @@ body{
     width: 100%;
     z-index: 1;
     margin-left: auto;
+    
 }
 
 @keyframes astro-1 {
@@ -98,6 +100,13 @@ body{
 
 /* BLOCO 1: medias */
 @media only screen and (max-width: 870px){
+    .bloco-1{
+        background-size: 100%;
+        background-position: 0 50vh;
+        background-repeat: no-repeat;
+        padding-bottom: 15%;
+    }
+
     .bloco-1 .container #logo{
         margin-left: 0;
         margin-right: auto;
@@ -151,6 +160,13 @@ body{
     font-size: 4em;
 }
 
+/* BLOCO 2: medias */
+@media only screen and (max-width: 870px){
+    .bloco-2 .container h1{
+        font-size: 2em;
+    }    
+}
+
 /* BLOCO 3 */
 .bloco-3 .container{
     display: flex;
@@ -172,6 +188,18 @@ body{
 
 .bloco-3 .container .typed-cursor{
     animation-duration: 1.5s !important;
+}
+
+/* BLOCO 3: medias */
+@media only screen and (max-width: 870px){
+    .bloco-3 .container h1{
+        color: #fff;
+        font-size: 2em;
+    }
+    
+    .bloco-3 .container h1 span{
+        font-size: 2.5em;
+    }
 }
 
 /* BLOCO 4 */
@@ -206,6 +234,13 @@ body{
     100%    {transform: translateX(-33.8%);}
 }
 
+/* BLOCO 4: medias */
+@media only screen and (max-width: 870px){
+    .bloco-4 .container .faixa h1{
+        font-size: 7em;
+    }
+}
+
 /* BLOCO 5 */
 .bloco-5 .container{
     display: flex;
@@ -220,6 +255,13 @@ body{
     color: #FF0646;
     margin: auto 0;
     font-size: 3em;
+}
+
+/* BLOCO 5: medias */
+@media only screen and (max-width: 870px){
+    .bloco-5 .container h1{
+        font-size: 2em;
+    }
 }
 
 /* BLOCO 6 */
@@ -262,6 +304,19 @@ body{
 
 .bloco-6 .container #a-3:hover{
     color: #FF0646;
+}
+
+/* BLOCO 6: medias */
+@media only screen and (max-width: 870px){
+    .bloco-6 .container a{
+        font-size: 3em;
+        font-weight: 700;
+        text-decoration: none;
+        color: #484D56;
+        line-height: 100%;
+        width: fit-content;
+        transition: 0.2s;
+    }
 }
 
 /* BLOCO 7 */

@@ -42,3 +42,13 @@ $(window).scroll(function () {
        $head.addClass('active');
     }
 });
+
+if (window.matchMedia("(max-width:800px)").matches) {
+    $(window).scroll(function () {
+        var $this = $(this),
+            $head = $('#body');
+        if ($this.scrollTop() > 3600) {
+           $head.addClass('active');
+        }
+    });
+}
